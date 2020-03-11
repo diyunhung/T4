@@ -244,18 +244,18 @@ footer {
 .blog_date {
     background: url(../img/bg-time.png) no-repeat;
     background-size: cover;
-    /* width: 42px; */
-    /* height: 42px; */
+    text-align: center;
     color: #fff;
     margin-right: 0.6rem;
 }
 
-.blog_date::after {
+
+/* .blog_date::after {
     content: "";
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-}
+} */
 
 .blog_date span {
     display: inline-block;
