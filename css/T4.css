@@ -12,6 +12,10 @@ address {
     border-bottom: .5px solid #fff;
 }
 
+nav h1{
+    font-size: 0;
+}
+
 .customer_w_75 {
     width: 75%;
 }
@@ -41,6 +45,11 @@ main {
     background-image: url(../img/bg-body.png);
 }
 
+.main_container{
+    box-shadow:0 0 10px 5px;
+}
+
+
 .banner_border {
     border: 1px solid #fff;
     border-top: 0;
@@ -66,7 +75,7 @@ main {
     font-size: 0.8rem;
 }
 
-.banner_btn {
+.banner_button {
     background-image: url(../img/buttons.png);
     color: #966a03;
     width: 110px;
@@ -75,27 +84,31 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 0.8rem;
-    margin-bottom: 0;
 }
 
-.banner_btn:hover {
+.banner_button:hover {
     color: #241b18;
     background-position: top right;
 }
 
-.banner_article {
+/* .banner_article {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
     background-image: url(../img/bg-pattern.jpg);
-}
+} */
 
 .banner_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    background-image: url(../img/bg-pattern.jpg);
 }
 
 .banner_text h2 {
@@ -104,20 +117,19 @@ main {
     margin-bottom: 1rem;
 }
 
-.product_description {
-    background-color: #4B3A33;
+/* .product_description {
+} */
+
+.product_text {
+    padding: 1.5rem 0.8rem 1.5rem 0.8rem;
+    background: url(../img/separator-light.png) repeat-x top;
+    background-size: 6px;
     color: #fff;
+    background-color: #4B3A33;
 }
 
 .product_description_dark {
     background-color: #241B18;
-    color: #fff;
-}
-
-.product_text {
-    padding: 1rem 0.8rem 0.8rem 0.8rem;
-    background: url(../img/separator-light.png) repeat-x top;
-    background-size: 6px;
 }
 
 .product_text h3 {
@@ -126,7 +138,7 @@ main {
     margin-bottom: 0.25rem;
 }
 
-.article_bg {
+.article_background {
     background-color: #fff;
     margin: 0;
 }
@@ -143,7 +155,6 @@ main {
 
 .article_blog {
     width: 100%;
-    margin-bottom: 2rem;
     background-color: #DDDAD3;
 }
 
@@ -203,11 +214,12 @@ main {
 
 footer {
     background-color: #E2B241;
+    box-shadow:0 -1px 10px 1px rgba(0 , 0 , 0, 0.5);
 }
 
 .contact_separator_vertical {
     background: url(../img/separator-dark-vertical.png) repeat-x bottom;
-    background-size: 6px;
+    background-size: 6px 12px;
 }
 
 .contact_list {
@@ -215,8 +227,12 @@ footer {
     margin-bottom: 1rem;
 }
 
+.visit_page{
+    margin-left: -15px;
+}
+
 .contact_list h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
@@ -249,23 +265,140 @@ footer {
     margin-right: 0.6rem;
 }
 
-
-/* .blog_date::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-} */
-
 .blog_date span {
     display: inline-block;
-    vertical-align: middle;
     font-size: 0.9rem;
     padding: 0 0.5rem;
 }
 
 .blog_description {
     text-align: left;
+}
+
+.blog_description h4{
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.contact_separator{
+    background: url(../img/separator-dark.png) repeat-x top;
+    background-size: 6px;
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+
+}
+
+.email_input{
+    border:3px solid #af8112;
+    padding-left: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.email_button{
+    color:white;
+    text-align: center;
+    background: url(../img/buttons.png) no-repeat left -12px bottom 2px;
+    width: 85px;
+    height: 28px;
+    border: 0;
+}
+
+.email_button:focus{
+    outline: 0;
+}
+
+.email_button:hover{
+    background-position:right -12px bottom 2px;
+    cursor: pointer;
+}
+
+.email_form h3{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+input::-webkit-input-placeholder{
+    font-size: 0.25rem;
+}
+
+.social_media{
+    text-align: center;
+}
+
+.social_media h3{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+.social_facebook{
+    background-image: url(../img/icons.png);
+    width: 35px;
+    height: 35px;
+    background-position: -46px -110px;
+    margin-right: 1.5rem;
+}
+
+.social_facebook:hover{
+    background-position: 0 -110px;
+}
+
+.social_google{
+    background-image: url(../img/icons.png);
+    width: 35px;
+    height: 35px;
+    background-position: -46px -151px;
+    margin-right: 1.5rem;
+}
+
+.social_google:hover{
+    background-position: 0 -151px;
+}
+
+.social_twitter{
+    background-image: url(../img/icons.png);
+    width: 40px;
+    height: 35px;
+    background-position:right bottom ;
+}
+
+.social_twitter:hover{
+    background-position:left bottom ;
+}
+
+.copyright_separator{
+    background: url(../img/separator-dark.png) repeat-x top;
+    background-size: 6px;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+
+}
+
+.footer_items , .footer_items a{
+    color:#ab7d0f ;
+    font-weight: bold;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.copyright span{
+    display: block;
+}
+
+.menu_bottom a+a{
+    margin-left: 0.5rem;
+}
+
+.menu_bottom a:hover{
+    color:black;
+}
+
+.menu_bottom{
+    display: none;
 }
 
 @media(min-width:576px) and (max-width:767px) {
@@ -275,7 +408,7 @@ footer {
 }
 
 @media(min-width:576px) {
-    .banner_article {
+    .banner_text {
         height: 300px;
     }
 }
@@ -286,13 +419,15 @@ footer {
     }
     .banner_text {
         padding: 0 2.5rem;
+        height: 407px;
     }
     .banner_text h2 {
         font-size: 2rem;
     }
-    .banner_article {
-        height: 407px;
-    }
+    /* .article_area {
+        padding: 1.5rem 0;
+    } */
+
     .article_blog {
         margin-bottom: 0;
     }
@@ -302,6 +437,20 @@ footer {
     }
     .contact_list {
         text-align: left;
+        margin-bottom: 0;
+    }
+
+    .social_media{
+        text-align: left;
+    }
+
+    .email_form h3{
+        text-align: left;
+    }
+
+
+    .copyright span{
+        display: inline;
     }
 }
 
@@ -311,6 +460,15 @@ footer {
         background: url(../img/separator-light-vertical.png) repeat-y right;
         background-size: 6px;
     }
+
+    .store_address {
+        padding: 1.5rem 0;
+    }
+
+    .menu_bottom{
+        display: block;
+    }
+
 }
 
 @media(min-width:1024px) {
